@@ -1,0 +1,16 @@
+{
+    "optimizer": "Adam", 
+    "batch_size": 32,
+    "lr": 0.0005,
+    "dataset": "unsup",
+    "tasks": ["seg", "adaptive_threshold"],
+    "normalization_type": "loss+",
+    "algorithm": "mgda",
+    "use_approximation": true,
+    "scales": {"seg": 0.5, "adaptive_threshold": 0.5},
+    "parallel": false,
+    "num_classes": {
+        "seg": 151,
+        "adaptive_threshold": 2
+    }
+}

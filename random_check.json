@@ -1,0 +1,16 @@
+{
+    "optimizer": "Adam", 
+    "batch_size": 32,
+    "lr": 0.0005,
+    "dataset": "unsup",
+    "tasks": ["seg", "random_seg"],
+    "normalization_type": "loss+",
+    "algorithm": "mgda",
+    "use_approximation": true,
+    "scales": {"seg": 0.5, "random_seg": 0.5},
+    "parallel": false,
+    "num_classes": {
+        "seg": 151,
+        "random_seg": 151
+    }
+}
